@@ -95,7 +95,7 @@ char keypad_getkey()
     for (uint8_t row = 4; row < 8; row++) {
         CLR_BIT(PORTB, row);  
 
-        // Check every column while this row is selected
+        // Check every column while this row is selected.
         for (uint8_t col = 2; col < 6; col++) {
             if (GET_BIT(PIND, col) == 0) {
 
@@ -146,7 +146,7 @@ const char* encode_morse(char letter)
         if (morse_table[i].letter == letter)
             return morse_table[i].code;
     }
-    return NULL; // not found
+    return NULL; // not found.
 }
 
 void play_morse(const char *code)
@@ -189,7 +189,7 @@ void appSetup()
 void appLoop()
 {
     char key = keypad_getkey();
-    if (key == 0) return; // no key pressed -> nothing to do this pass
+    if (key == 0) return; // no key pressed -> nothing to do this pass.
 
     if (key == 'M')
     {
