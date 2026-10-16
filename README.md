@@ -181,4 +181,4 @@ morse-code-translator/
 
 ## 👥 Team
 
-Made by *[Malak Medhat / Marwan Mohamed / Omer Fekry / Habiba Ahmed / Esmail]* during the *[Fucalty of Engineering Capital University]* summer training, *[year]*.
+Made by *Malak Medhat / Marwan Mohamed / Omer Fekry / Habiba Ahmed / Esmail Mohamed * during the *Faculty of Engineering Capital University* summer training, *2026*.
