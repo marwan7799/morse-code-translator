@@ -82,10 +82,10 @@ void led_on(char a)
 }
 
 void keypad_init()
-{   //01111100
+{   //01111100.
     DDRD &= ~0x3C;    
     PORTD |= 0x3C;                           
-    //11110000
+    //11110000.
     DDRB |= (0xF0);   
     PORTB |= (0xF0);  
 }
@@ -114,8 +114,8 @@ char keypad_getkey()
 
 
 typedef struct {
-    const char *code;   // e.g. ".-"
-    char letter;        // e.g. 'A'
+    const char *code;   // e.g. : ".-"
+    char letter;        // e.g. :'A'
 } MorseEntry;
 
 const MorseEntry morse_table[] = {
@@ -146,7 +146,7 @@ const char* encode_morse(char letter)
         if (morse_table[i].letter == letter)
             return morse_table[i].code;
     }
-    return NULL; // not found.
+    return NULL; // not found!
 }
 
 void play_morse(const char *code)
